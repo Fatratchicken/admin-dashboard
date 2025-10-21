@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.main-grid-container{
+    height: 100vh;
+
+    display: grid;
+
+    grid-template: 1fr 3fr / 1fr 5fr;
+}
+
+#sidebar{
+    background: red;
+
+    grid-row: 1/4;
+}
+
+#header{
+    background: blue;
+}
+
+#content-section{
+    background: yellow;
+}
