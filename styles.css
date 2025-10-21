@@ -2,6 +2,8 @@ body{
     margin: 0;
 }
 
+/*basic layout*/
+
 #main-grid-container{
     height: 100vh;
 
@@ -21,7 +23,19 @@ body{
 }
 
 #content-section{
+    display: flex;
     background: yellow;
+
+    padding: 20px;
+}
+
+/**/
+
+#block-section{
+    display: flex;
+    flex-direction: column;
+
+    flex: 5;
 }
 
 #repo-blocks-container{
@@ -29,11 +43,37 @@ body{
 
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 25px;
-    padding: 30px;
+
+    padding-right: 25px;
+
+    flex: 1;
 }
 
 .repo-block{
     background-color: red;
-    height: 250px;
 }
+
+#announcements-trending-section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    flex: 1;
+}
+
+#announcements-container, #trending-container{
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+#announcement-block, #trending-block{
+    background-color: red;
+    
+    flex: 1;
+}
+
+
+
 
