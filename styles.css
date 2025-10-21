@@ -1,3 +1,11 @@
+:root{
+    --sidebar-background-color: rgb(74, 172, 205);
+    --header-background-color: white;
+    --content-section-background-color: lightgray;
+    --repo-block-background-color: white;
+    --announcement-trending-background-color: white;
+}
+
 body{
     margin: 0;
 }
@@ -13,18 +21,18 @@ body{
 }
 
 #sidebar{
-    background: red;
+    background: var(--sidebar-background-color);
 
     grid-row: 1/4;
 }
 
 #header{
-    background: blue;
+    background: var(--header-background-color);
 }
 
 #content-section{
     display: flex;
-    background: yellow;
+    background: var(--content-section-background-color);
 
     padding: 20px;
 }
@@ -35,7 +43,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    flex: 5;
+    flex: 4;
 }
 
 #repo-blocks-container{
@@ -50,13 +58,13 @@ body{
 }
 
 .repo-block{
-    background-color: red;
+    background-color: var(--repo-block-background-color);
 }
 
 #announcements-trending-section{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
 
     flex: 1;
 }
@@ -69,8 +77,8 @@ body{
 }
 
 #announcement-block, #trending-block{
-    background-color: red;
-    
+    background-color: var(--announcement-trending-background-color);
+
     flex: 1;
 }
 
