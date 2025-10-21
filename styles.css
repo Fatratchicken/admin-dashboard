@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --sidebar-background-color: rgb(74, 172, 205);
     --header-background-color: white;
     --content-section-background-color: lightgray;
     --repo-block-background-color: white;
     --announcement-trending-background-color: white;
+
+    --sidebar-color: white;
 }
 
 body{
+    font-family: Roboto, system-ui;
+    
     margin: 0;
 }
 
@@ -38,6 +44,8 @@ body{
 }
 
 /**/
+
+/*grid and flex layout*/
 
 #block-section{
     display: flex;
@@ -82,6 +90,21 @@ body{
     flex: 1;
 }
 
+/**/
+
+#sidebar{
+    display: flex;
+
+    color: var(--sidebar-color);
+}
+
+
+#sidebar > svg{
+    width: 2em;
+    height: 2em;
+
+    fill: white;
+}
 
 
 
