@@ -16,6 +16,19 @@ body{
     margin: 0;
 }
 
+li{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h3{
+    font-size: 2em;
+    margin: 0;
+}
+
 /*basic layout*/
 
 #main-grid-container{
@@ -93,18 +106,50 @@ body{
 /**/
 
 #sidebar{
-    display: flex;
-
     color: var(--sidebar-color);
 }
 
 
-#sidebar > svg{
+#side-bar-logo > svg{
+    width: 3em;
+    height: 3em;
+
+    fill: white;
+}
+
+#side-bar-logo{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+
+    margin-bottom: 3em;
+
+}
+
+#sidebar-icons, #sidebar-settings{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+#sidebar-icons > li, #sidebar-settings > li{
+    display: flex;
+    align-items: center;
+
+    gap: 1.5em;
+
+}
+
+#sidebar-icons svg, #sidebar-settings svg{
     width: 2em;
     height: 2em;
 
     fill: white;
 }
 
-
-
+#sidebar-settings li:first-child{
+    margin-top: 3em;
+}
