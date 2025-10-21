@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 
-.main-grid-container{
+#main-grid-container{
     height: 100vh;
 
     display: grid;
@@ -23,3 +23,17 @@ body{
 #content-section{
     background: yellow;
 }
+
+#repo-blocks-container{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    padding: 30px;
+}
+
+.repo-block{
+    background-color: red;
+    height: 250px;
+}
+
