@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
-    --sidebar-background-color: rgb(74, 172, 205);
+    --sidebar-background-color: rgb(66, 176, 201);
     --header-background-color: white;
     --content-section-background-color: lightgray;
     --repo-block-background-color: white;
     --announcement-trending-background-color: white;
+    --input-background: rgb(239, 239, 239);
 
     --sidebar-color: white;
 }
@@ -27,6 +28,10 @@ h1{
 h3{
     font-size: 2em;
     margin: 0;
+}
+
+h4{
+    font-size: 1.5em;
 }
 
 /*basic layout*/
@@ -153,3 +158,47 @@ h3{
 #sidebar-settings li:first-child{
     margin-top: 3em;
 }
+
+#upper-header-div{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    gap: 5em;
+
+    margin-top: 10px;
+}
+
+#upper-header-div svg{
+    width: 2em;
+    height: 2em;
+}
+
+#upper-header-div #circle{
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+
+    background-color: var(--sidebar-background-color);
+}
+
+#upper-header-div  input{
+    background-color: var(--input-background);
+
+    width: 50em;
+    height: 3em;
+
+    border: none;
+    border-radius: 4em;
+}
+
+#upper-header-div #left, #upper-header-div #right{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#upper-header-div #right{
+    gap: 3em;
+}
+
