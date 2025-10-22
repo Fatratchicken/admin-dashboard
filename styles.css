@@ -52,6 +52,10 @@ h4{
 
 #header{
     background: var(--header-background-color);
+
+    z-index: 10;
+
+    box-shadow: 0 5px rgba(172, 171, 171, 0.643);
 }
 
 #content-section{
@@ -85,6 +89,10 @@ h4{
 
 .repo-block{
     background-color: var(--repo-block-background-color);
+    box-shadow: 0 5px rgba(172, 171, 171, 0.643);
+
+    border-left: 0.5em solid var(--sidebar-background-color);
+    border-radius: 0.5em; 
 }
 
 #announcements-trending-section{
@@ -100,6 +108,8 @@ h4{
     flex-direction: column;
 
     flex: 1;
+
+    box-shadow: 0 5px rgba(172, 171, 171, 0.643);
 }
 
 #announcement-block, #trending-block{
@@ -202,3 +212,43 @@ h4{
     gap: 3em;
 }
 
+#lower-header-div{
+    display: flex;
+    align-items: center;
+}
+
+#lower-header-div #circle{
+    width: 6em;
+    height: 6em;
+
+    border-radius: 50%;
+
+    background-color: var(--sidebar-background-color);
+}
+
+#lower-header-div #right{
+    display: flex;
+
+    align-items: center;
+    gap: 1em;
+
+    margin-left: 3em;
+    margin-right: auto;
+}
+
+#lower-header-div ul{
+    display: flex;
+    gap: 3em;
+
+    margin-right: 10em;
+}
+
+#lower-header-div li{
+    background-color: var(--sidebar-background-color);
+    padding: 1.5em;
+
+    color: white;
+    font-weight:600;
+
+    border-radius: 2em;
+}
